@@ -18,7 +18,7 @@ nav:
   articles: /archives/
   projects: http://github.com/probberechts
   about: /about/  
-
+  search: /search/ 
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
@@ -30,23 +30,23 @@ social_links:
   -
     icon: github
     link: http://github.com/probberechts/cactus-dark
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
+#  -
+#    icon: twitter
+#    link: /
+#  -
+#    icon: facebook
+#    link: /
   -
     icon: mail
     link: mailto:name@email.com
-  -
-    icon: mastodon
-    label: mastodon.social
-    link: https://mastodon.social/@alice
-  -
-    icon: mastodon
-    label: fosstodon.org
-    link: https://fosstodon.org/@alice
+#  -
+#    icon: mastodon
+#    label: mastodon.social
+#    link: https://mastodon.social/@alice
+#  -
+#    icon: mastodon
+#    label: fosstodon.org
+#    link: https://fosstodon.org/@alice
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -107,7 +107,7 @@ logo:
   enabled: true
   width: 50
   height: 50
-  url: /images/logo.png
+  url: /images/logo.jpg
   gravatar: false
   grayout: true
 
@@ -122,13 +122,13 @@ logo:
 #   - gravatar: whether to create a favicon from your Gravatar
 favicon:
   desktop:
-    url: /images/favicon.ico
+    url: /images/logo.jpg
     gravatar: false
   android:
-    url: /images/favicon-192x192.png
+    url: /images/logo.jpg
     gravatar: false
   apple:
-    url: /images/apple-touch-icon.png
+    url: /images/logo.jpg
     gravatar: false
 
 # The color scheme that should be used to highlight codeblocks.
