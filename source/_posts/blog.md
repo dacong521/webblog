@@ -1,5 +1,5 @@
 ---
-title: page
+title: 博客搭建记录
 date: 2026-11-10 12:00:13
 tags:
 ---
