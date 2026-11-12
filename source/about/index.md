@@ -1,4 +1,4 @@
 ---
-title: about
+title: 关于
 date: 2026-11-10 11:43:02
 ---

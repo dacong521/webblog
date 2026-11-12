@@ -16,7 +16,6 @@ direction: ltr
 nav:
   home: /
   articles: /archives/
-  projects: http://github.com/probberechts
   about: /about/  
   search: /search/ 
 
