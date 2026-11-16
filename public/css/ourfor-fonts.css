@@ -1,0 +1,77 @@
+/* ============================================================
+   字体声明：与参考站点（blog.ourfor.top）完全相同的三套字体
+   - NexusSans：西文正文（常规 / 粗体 / 斜体 / 粗斜体）
+   - AritaHeiti：中文（细 / 常规 / 粗）
+   - DankMono：代码等宽（常规 / 斜体）
+   文件自托管在 source/font/ourfor/，构建后路径为 /font/ourfor/
+   ============================================================ */
+
+/* ---------- NexusSans（西文） ---------- */
+@font-face {
+  font-family: NexusSans;
+  src: url("/font/ourfor/NexusSansWebPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: NexusSans;
+  src: url("/font/ourfor/NexusSansWebPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: NexusSans;
+  src: url("/font/ourfor/NexusSansWebPro-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: NexusSans;
+  src: url("/font/ourfor/NexusSansWebPro-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- AritaHeiti（中文） ---------- */
+@font-face {
+  font-family: AritaHeiti;
+  src: url("/font/ourfor/AritaHeiti-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AritaHeiti;
+  src: url("/font/ourfor/AritaHeiti-Light.otf") format("opentype");
+  font-weight: lighter;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AritaHeiti;
+  src: url("/font/ourfor/AritaHeiti-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-display: swap;
+}
+
+/* ---------- DankMono（代码） ---------- */
+@font-face {
+  font-family: DankMono;
+  src: url("/font/ourfor/DankMono-Regular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DankMono;
+  src: url("/font/ourfor/DankMono-Italic.otf") format("opentype");
+  font-style: italic;
+  font-display: swap;
+}

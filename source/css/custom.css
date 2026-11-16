@@ -4,34 +4,20 @@
    ============================================================ */
 
 /* ---------- 1. 字体 ---------- */
-/* 全站正文与界面：霞鹜文楷（本地自托管，分片按需加载） */
-body,
-input,
-textarea,
-button,
-select,
-#header #title h1,
-#nav ul a,
-.content,
-.content p,
-.post-list,
-.archive,
-#footer,
-.copyright,
-h1, h2, h3, h4, h5, h6 {
-  font-family: "LXGW WenKai", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+/* 与参考站点同一套字体：西文 NexusSans、中文 Arita Heiti、代码 DankMono
+   字体文件在 source/font/ourfor/，声明见 ourfor-fonts.css */
+*:not(i) {
+  font-family: NexusSans, DankMono, AritaHeiti, "NotoSansCJKSC", sans-serif !important;
 }
 
-/* 代码块：霞鹜文楷等宽版，保证代码对齐 */
+/* 代码块：DankMono 等宽，保证代码对齐 */
 pre,
 pre *,
 code,
 code *,
 .highlight,
 .highlight * {
-  font-family: "LXGW WenKai Mono", "LXGW WenKai", "JetBrains Mono",
-    "Cascadia Code", Consolas, monospace !important;
+  font-family: DankMono, AritaHeiti, "NotoSansCJKSC", sans-serif !important;
 }
 
 /* 字号与行高，贴合参考站点的紧凑感 */
