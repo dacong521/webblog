@@ -189,3 +189,162 @@ body {
   overflow-x: auto;
   white-space: nowrap;
 }
+
+/* 代码块超宽时在块内横向滚动，不撑破页面 */
+pre,
+.highlight {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* ---------- 8. 手机端版式（≤480px） ---------- */
+/* 参考站点在手机上是「大字号 + 导航全部展开换行 + 文章列表日期独占一行」的版式 */
+@media screen and (max-width: 480px) {
+  /* 全局字号放大到适合单手阅读 */
+  body {
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* 头部：Logo 与标题都放大 */
+  #header {
+    margin-bottom: 1.8rem;
+  }
+
+  #header #title {
+    display: block;
+    margin-right: 0;
+    min-height: 0;
+  }
+
+  #header #title h1,
+  #header #title .h1 {
+    font-size: 1.9rem;
+    line-height: 1.35;
+  }
+
+  #header #logo {
+    width: 64px;
+    height: 64px;
+    margin-right: 14px;
+    border-radius: 8px;
+  }
+
+  /* 导航：全部展开，自动换行，字号与正文同级 */
+  #header #nav {
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+
+  #header #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.45rem 1.35rem;
+    line-height: 1.4;
+  }
+
+  #header #nav ul li,
+  #header #nav ul.responsive li,
+  #header #nav ul li:not(:first-child) {
+    display: inline-flex !important;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-right: 0;
+    font-size: 1.05rem;
+  }
+
+  #header #nav ul li a {
+    margin-right: 0;
+  }
+
+  #header #nav ul li .nav-icon {
+    width: 19px;
+    height: 19px;
+    margin-right: 6px;
+    opacity: 1;
+  }
+
+  /* 导航项本来就全部可见，汉堡按钮去掉，避免误触把菜单切成块状 */
+  #header #nav ul li.icon {
+    display: none !important;
+  }
+
+  /* 正文与标题 */
+  .content,
+  .article {
+    font-size: 17px;
+  }
+
+  .content p {
+    margin-bottom: 1.4rem;
+  }
+
+  .content .h1,
+  #writing > .h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .content h3 {
+    font-size: 1.3rem;
+    margin: 1.6rem 0 0.8rem;
+  }
+
+  /* 文章列表：日期独占一行，标题下一行，条目之间留白 */
+  #writing .post-list .post-item {
+    display: block;
+    margin-bottom: 1.3rem;
+  }
+
+  #writing .post-list .post-item .meta {
+    display: block;
+    width: auto;
+    margin: 0 0 0.15rem;
+    color: #7a7a7a;
+    font-size: 0.95rem;
+  }
+
+  #writing .post-list .post-item span {
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  /* 页脚是绝对定位，给正文留出底部空间，避免最后几行被页脚盖住 */
+  .content {
+    padding-bottom: 8rem;
+  }
+
+  /* 页脚：版权与导航字号跟着放大 */
+  #footer {
+    font-size: 0.95rem;
+  }
+
+  #footer .copyright {
+    margin: 1.6rem 0 1.1rem;
+  }
+
+  #footer .copyright span {
+    font-size: 0.85rem;
+    padding: 5px 9px;
+  }
+
+  #footer .footer-left,
+  #footer .footer-right {
+    line-height: 1.8;
+  }
+
+  #footer li,
+  #footer li a {
+    margin-right: 0.6rem;
+  }
+}
