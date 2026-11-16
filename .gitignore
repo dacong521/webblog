@@ -1,10 +1,9 @@
-# Hexo 生成物与依赖，不入库
+# 生成物 db.json 与日志不入库；public/ 已按要求纳入版本管理
 .DS_Store
 Thumbs.db
 db.json
 *.log
 node_modules/
-public/
 .deploy*/**
 
 # 编辑器临时文件

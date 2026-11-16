@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="日常三条命令123hexo new &quot;文章标题&quot;     # 新建文章，生成 source&#x2F;_posts&#x2F;文章标题.mdhexo server            # 本地起服务，浏览器打开 http:&#x2F;&#x2F;localhost:4000hexo generate          # 生成静态站点到 public&#x2F;  改完文章刷新浏览器即可，本地服务会自动重新生成（默认开启了实">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🧰 Hexo 常用命令与写作流程">
+<meta property="og:url" content="https://example.com/article/hexo-commands/index.html">
+<meta property="og:site_name" content="布吉岛">
+<meta property="og:description" content="日常三条命令123hexo new &quot;文章标题&quot;     # 新建文章，生成 source&#x2F;_posts&#x2F;文章标题.mdhexo server            # 本地起服务，浏览器打开 http:&#x2F;&#x2F;localhost:4000hexo generate          # 生成静态站点到 public&#x2F;  改完文章刷新浏览器即可，本地服务会自动重新生成（默认开启了实">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-15T13:30:00.000Z">
+<meta property="article:modified_time" content="2026-11-16T12:41:01.489Z">
+<meta property="article:author" content="布点">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="工具">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/logo.svg">
+        
+      
+      
+      
+    
+    <!-- title -->
+    <title>🧰 Hexo 常用命令与写作流程</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/lxgw-wenkai.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">文章</a></li><!--
+     --><!--
+       --><li><a href="/diary/">生活</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/projects/">项目</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/article/hello-blog/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/article/markdown-guide/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://example.com/article/hexo-commands/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://example.com/article/hexo-commands/&text=🧰 Hexo 常用命令与写作流程"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://example.com/article/hexo-commands/&is_video=false&description=🧰 Hexo 常用命令与写作流程"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=🧰 Hexo 常用命令与写作流程&body=Check out this article: https://example.com/article/hexo-commands/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://example.com/article/hexo-commands/&name=🧰 Hexo 常用命令与写作流程&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://example.com/article/hexo-commands/&t=🧰 Hexo 常用命令与写作流程"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E4%B8%89%E6%9D%A1%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">日常三条命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%8B%AC%E7%AB%8B%E9%A1%B5%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">新建独立页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90"><span class="toc-number">3.</span> <span class="toc-text">清理与重新生成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9A%84%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF%EF%BC%88Front-matter%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">文章的头部信息（Front-matter）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%80%8E%E4%B9%88%E6%94%BE"><span class="toc-number">5.</span> <span class="toc-text">图片怎么放</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        🧰 Hexo 常用命令与写作流程
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">布点</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2026-11-15T13:30:00.000Z" class="dt-published" itemprop="datePublished">2026-11-15</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Hexo/" rel="tag">Hexo</a>, <a class="p-category" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h2 id="日常三条命令"><a href="#日常三条命令" class="headerlink" title="日常三条命令"></a>日常三条命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span>     <span class="comment"># 新建文章，生成 source/_posts/文章标题.md</span></span><br><span class="line">hexo server            <span class="comment"># 本地起服务，浏览器打开 http://localhost:4000</span></span><br><span class="line">hexo generate          <span class="comment"># 生成静态站点到 public/</span></span><br></pre></td></tr></table></figure>
+
+<p>改完文章刷新浏览器即可，本地服务会自动重新生成（默认开启了实时预览）。</p>
+<h2 id="新建独立页面"><a href="#新建独立页面" class="headerlink" title="新建独立页面"></a>新建独立页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about    <span class="comment"># 生成 source/about/index.md</span></span><br><span class="line">hexo new page diary    <span class="comment"># 生成 source/diary/index.md</span></span><br></pre></td></tr></table></figure>
+
+<p>页面和文章的区别：页面不会出现在文章列表里，适合「关于」「生活」「项目」这类常驻内容。建完还要在主题配置的 <code>nav</code> 里加一项，导航栏才会显示。</p>
+<h2 id="清理与重新生成"><a href="#清理与重新生成" class="headerlink" title="清理与重新生成"></a>清理与重新生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>样式改了但页面没变化时，先 <code>hexo clean</code> 再生成，多半就好了。</p>
+<h2 id="文章的头部信息（Front-matter）"><a href="#文章的头部信息（Front-matter）" class="headerlink" title="文章的头部信息（Front-matter）"></a>文章的头部信息（Front-matter）</h2><p>每篇文章开头的两行 <code>---</code> 之间是元信息：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-11-16 20:00:00</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签一</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签二</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">分类</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>date</code> 决定文章在首页和归档里的排序（新的在前）</li>
+<li><code>tags</code> 和 <code>categories</code> 可以只写一个，也可以都不写</li>
+<li>想固定某篇文章的链接，可以在 <code>_config.yml</code> 里调整 <code>permalink</code></li>
+</ul>
+<h2 id="图片怎么放"><a href="#图片怎么放" class="headerlink" title="图片怎么放"></a>图片怎么放</h2><p>在文章同目录放一个同名文件夹，把图片丢进去，正文里这样引用：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">说明文字</span>](<span class="link">图片文件名.png</span>)</span><br></pre></td></tr></table></figure>
+
+<p>这样导出、迁移时图片跟着文章走，不会丢。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/archives/">文章</a></li>
+        
+          <li><a href="/diary/">生活</a></li>
+        
+          <li><a href="/about/">关于</a></li>
+        
+          <li><a href="/projects/">项目</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E4%B8%89%E6%9D%A1%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">日常三条命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%8B%AC%E7%AB%8B%E9%A1%B5%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">新建独立页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90"><span class="toc-number">3.</span> <span class="toc-text">清理与重新生成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9A%84%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF%EF%BC%88Front-matter%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">文章的头部信息（Front-matter）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%80%8E%E4%B9%88%E6%94%BE"><span class="toc-number">5.</span> <span class="toc-text">图片怎么放</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://example.com/article/hexo-commands/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://example.com/article/hexo-commands/&text=🧰 Hexo 常用命令与写作流程"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://example.com/article/hexo-commands/&is_video=false&description=🧰 Hexo 常用命令与写作流程"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=🧰 Hexo 常用命令与写作流程&body=Check out this article: https://example.com/article/hexo-commands/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://example.com/article/hexo-commands/&title=🧰 Hexo 常用命令与写作流程"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://example.com/article/hexo-commands/&name=🧰 Hexo 常用命令与写作流程&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://example.com/article/hexo-commands/&t=🧰 Hexo 常用命令与写作流程"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  
+  <div class="copyright">
+    
+      
+      <span class="copyright-site">
+        💐 布吉岛
+      </span>
+    
+      
+      <span class="copyright-icp">
+        <a href="https://hexo.io" target="_blank" rel="noopener">🍒 由 Hexo 驱动</a>
+      </span>
+    
+  </div>
+  
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2026
+    布点
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">文章</a></li><!--
+     --><!--
+       --><li><a href="/diary/">生活</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/projects/">项目</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
