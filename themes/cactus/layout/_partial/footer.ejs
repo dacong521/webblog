@@ -1,4 +1,14 @@
 <footer id="footer">
+  <% if (theme.footer_badges && theme.footer_badges.length) { %>
+  <div class="copyright">
+    <% for (var i = 0; i < theme.footer_badges.length; i++) { %>
+      <% var badge = theme.footer_badges[i]; %>
+      <span class="copyright-<%= i === 0 ? 'site' : 'icp' %>">
+        <% if (badge.link) { %><a href="<%- url_for(badge.link) %>" target="_blank" rel="noopener"><%= badge.text %></a><% } else { %><%= badge.text %><% } %>
+      </span>
+    <% } %>
+  </div>
+  <% } %>
   <div class="footer-left">
     <%= __('footer.copyright') %> &copy;
     <% var endYear = (theme.copyright && theme.copyright.end_year) ? theme.copyright.end_year : new Date().getFullYear() %>

@@ -4,17 +4,17 @@
 
 # Site
 title: 布吉岛
-subtitle: '布点'
-description: ''
+subtitle: ''
+description: '这里记录我的技术笔记、折腾记录与日常碎片。'
 keywords:
 author: 布点
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://budian.top
-permalink: :year/:month/:day/:title/
+## 部署前把 url 改成你的真实域名或 Pages 分配的域名
+url: https://example.com
+permalink: article/:name/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -98,6 +98,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: cactus
 
+# 额外功能开关（在主题 _config.yml 里进一步细化）
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
